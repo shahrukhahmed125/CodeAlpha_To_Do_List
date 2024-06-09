@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <style>
+        * {
+            /* color: #BFBDB6; */
+            margin: 0;
+        }
+
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            padding: 20px;
+            color: white;
+        }
+
+        .text-head {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            margin-right: 10px;
+            text-align: center;
+            /* width: 100%; */
+            /* box-sizing: border-box; */
+            border: none;
+            background-color: #171B24;
+            color: white;
+
+        }
+
+        button {
+            padding: 8px 16px;
+            background-color: #E1AF4B;
+            color: #000;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            /* width: 100%; */
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            background-color: #171B24;
+            color: #ffffff;
+        }
+
+        #result {
+            font-size: 1.2em;
+            color: #ffffff;
+            /* text-align: center; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-head">To Do List</h1>
+
+        <input id="text" type="text" />
+        <button id="btn" onclick="add()">+</button>
+        <p id="result"></p>
+    </div>
+</body>
+<script src="do.js"></script>
+</html>
